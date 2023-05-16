@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hoc from "./Hoc";
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <center>
+      <h1>Welcome User!! {props.name}</h1>
+    </center>
   );
-}
+};
 
-export default App;
+export default Hoc(App);
